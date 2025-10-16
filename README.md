@@ -38,26 +38,30 @@ When there is no voltage applied to the coil, COM (common) is connected to NC (n
 In this Arduino  Relay Control Circuit we have used Arduino to control the relay via a BC547 transistor. We have connected transistor base to Arduino pin A0 through a 1k resistor. An AC bulb is used for demonstration.Working is simple, we need to make the RELAY Pin (PIN A0) high to make the Relay module ON and make the RELAY pin low to turn off the Relay Module. The AC light will also turn on and off according to Relay.
 
 ## PROGRAM:
-'''
+``
 void setup() {
-pinMode(7, OUTPUT);
+  pinMode(6,OUTPUT);
 }
+
 void loop() {
-digitalWrite(7, HIGH);
-delay(2000);
-digitalWrite(7, LOW);
-delay(1000);
-}
+  digitalWrite(6,HIGH);
+  delay(3000);
+  digitalWrite(6,LOW);
+  delay(1000);
+} 
 '''
 ## CIRCUIT DIAGRAM:
-<img width="1301" height="845" alt="Screenshot 2025-09-11 143439" src="https://github.com/user-attachments/assets/911060c2-97b3-4ea2-b248-b9c5ea8581fa" />
+<img width="1207" height="845" alt="image" src="https://github.com/user-attachments/assets/354919df-5242-46af-8a0b-5381354dd3e0" />
+
 
 ## OUTPUT:
 ON:
-<img width="1024" height="704" alt="Screenshot 2025-09-11 143515" src="https://github.com/user-attachments/assets/5c306630-c550-4af3-af88-dc1b59d8d3e5" />
+<img width="1750" height="962" alt="Screenshot 2025-09-18 091236" src="https://github.com/user-attachments/assets/49eed011-9805-4386-a80b-11993b00fe55" />
+
 
 OFF:
-<img width="1025" height="738" alt="Screenshot 2025-09-11 143542" src="https://github.com/user-attachments/assets/b1756745-c52b-4a51-a968-b3f8e2e573de" />
+<img width="1747" height="972" alt="Screenshot 2025-09-18 091344" src="https://github.com/user-attachments/assets/d8e82924-dbed-446e-8fbc-8e7e9ff1e7c1" />
+
 
 ## RESULT:
 
